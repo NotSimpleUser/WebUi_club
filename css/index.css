@@ -1,0 +1,48 @@
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+    
+  }
+
+  a {
+      text-decoration: none; /*убираем подчеркивание текста ссылок*/
+      font-size: 50px;
+      font-family:sans-serif;
+      margin-left: 15px;
+      color:blueviolet;
+      
+    }
+
+li{
+    display: inline-block;
+    
+}
+
+.logo{
+    margin-left:700px;
+}
+
+a {
+	position: relative;
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color:yellow; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
