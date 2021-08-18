@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+    max-width: 1900px;
 }
 
 ul {
@@ -60,3 +61,27 @@ a:focus:after {
     margin-top:15px; 
     display: inline-block;  
 }
+
+.bio{
+    height: 400px;
+    background-color: rgb(29, 27, 27);
+    width: 1920;
+    display: flex;
+}
+
+
+
+.txt{
+    width:900px;
+    font-family:sans-serif;
+    color:white;
+    font-size: 25px;
+    margin-left:100px;
+    margin-top: 20px;
+
+}
+
+.main-page{
+    height: 870px;
+}
+
