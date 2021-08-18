@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding:0;
-    max-width: 1900px;
+    max-width: 1902px;
 }
 
 ul {
@@ -63,10 +63,22 @@ a:focus:after {
 }
 
 .bio{
-    height: 400px;
-    background-color: rgb(29, 27, 27);
+    height: 502px;
+    background-color: rgba(0, 0, 0, 0.781);
     width: 1920;
     display: flex;
+    background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.LW{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 1920;
+    display: flex;
+    background: linear-gradient( rgba(41, 40, 40, 0.664), rgba(19, 19, 19, 0.959)), url("/img/LAK.jpg");
+    margin-top:-10px;
 }
 
 
@@ -77,11 +89,73 @@ a:focus:after {
     color:white;
     font-size: 25px;
     margin-left:100px;
-    margin-top: 20px;
+    margin-bottom: 35px;
+
+}
+
+.txt1{
+    width:900px;
+    font-family:sans-serif;
+    color:white;
+    font-size: 25px;
+    margin-left:100px;
+    
 
 }
 
 .main-page{
-    height: 870px;
+    height: 910px;
 }
 
+.team{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.win{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.lorem{
+    font-size: 40px;
+    margin-bottom:10px;
+    color: rgb(240, 240, 96);
+}
+
+.lorem1{
+    font-size: 40px;
+    margin-bottom:10px;
+    color: rgb(240, 240, 96);
+}
+
+.prop1{
+    width:50px;
+    font-size: 40px;
+    display: inline;
+    background-color:  blueviolet;
+
+}
+
+.prop1 h{
+    margin-left: 850px;
+    margin-right: 913px;
+    color: yellow;
+    margin-top: 100px;
+}
+
+.prop{
+    width:52px;
+    font-size: 40px;
+    display: inline;
+    background-color:  blueviolet;
+
+}
+
+.prop h{
+    margin-left:700px;
+    margin-right:660px;
+    color: yellow;
+}
