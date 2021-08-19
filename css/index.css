@@ -36,24 +36,23 @@ ul {
 a {
 	position: relative;
 	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
+	line-height: 1; 
+	text-decoration: none; 
 
 }
 a:after {
 	display: block;
 	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 3px; /*задаём ширину линии*/
-	background-color:yellow; /*задаём цвет линии*/
+	left: 0; 
+	height: 3px; 
+	background-color:yellow; 
 	content: "";
-	transition: width 0.6s ease-out; /*задаём время анимации*/
+	transition: width 0.6s ease-out; 
 }
 
 a:hover:after,
 a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 100%; 
 }
 
 
@@ -141,9 +140,10 @@ a:focus:after {
 
 .prop1 h{
     margin-left: 850px;
-    margin-right: 913px;
+    margin-right: 905px;
     color: yellow;
     margin-top: 100px;
+    font-family:sans-serif;
 }
 
 .prop{
@@ -156,6 +156,19 @@ a:focus:after {
 
 .prop h{
     margin-left:700px;
-    margin-right:660px;
+    margin-right:617px;
     color: yellow;
+    font-family:sans-serif;
+}
+
+.bottom p{
+    font-family:sans-serif;
+    color:whitesmoke;
+    font-size: 15px;
+
+}
+
+.bottom{
+    background-color: rgb(53, 53, 53);
+    height:60px;
 }
