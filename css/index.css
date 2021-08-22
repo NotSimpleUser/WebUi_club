@@ -39,7 +39,7 @@ a:after {
 	height: 3px; 
 	background-color:yellow; 
 	content: "";
-	transition: width 0.6s ease-out; 
+	transition: width 0.3s ease-out; 
 }
 
 a:hover:after,
@@ -95,7 +95,7 @@ a:focus:after {
 }
 
 .main-page{
-    height: 910px;
+    height: 970px;
 }
 
 .team{
@@ -170,6 +170,8 @@ a:focus:after {
     overflow: hidden;
     background-color:black;
     font-family: Arial;
+    position: fixed;
+    width: 1920px;
   }
   
   /* Links inside the navbar */
@@ -180,6 +182,7 @@ a:focus:after {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
   }
   
   /* The dropdown container */
@@ -198,6 +201,7 @@ a:focus:after {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    
   }
   
   /* Add a red background color to navbar links on hover */
@@ -208,8 +212,8 @@ a:focus:after {
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
+    position: fixed;
+    background-color: blueviolet;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -223,11 +227,12 @@ a:focus:after {
     text-decoration: none;
     display: block;
     text-align: left;
+    
   }
   
 
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: blueviolet;
   }
   
   
@@ -242,3 +247,5 @@ a:focus:after {
   .pck{
       margin-left: 1800px;
   }
+
+ 
