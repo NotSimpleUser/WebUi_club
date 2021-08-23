@@ -97,7 +97,7 @@ a:focus:after {
 
 .main-page{
     height: 970px;
-    background: url("./img/mainpkc.jpg") width="1980" height="980" alt="LAL";
+    background-image: url("img/mainpkc.jpg") width="1980" height="980" alt="LAL";
 }
 
 .team{
