@@ -76,28 +76,30 @@ a:focus:after {
 
 .txt{
     width:900px;
+    height: 200px;
     font-family:sans-serif;
     color:white;
     font-size: 25px;
     margin-left:100px;
     margin-bottom: 35px;
+    background-color: black;
     
 
 }
 
 .txt1{
     width:900px;
+    height: 200px;
     font-family:sans-serif;
     color:white;
     font-size: 25px;
     margin-left:100px;
-    
+    background-color: black;
 
 }
 
 .main-page{
-    height: 970px;
-    background: url("./img/mainpkc.jpg") width="1980" height="980" alt="LAL";
+    height: 50px;
 }
 
 .team{
@@ -126,32 +128,32 @@ a:focus:after {
 
 .prop1{
     width:50px;
-    font-size: 40px;
+    font-size: 25px;
     display: inline;
-    background-color:  blueviolet;
+    background-color:  black;
 
 }
 
 .prop1 h{
     margin-left: 850px;
-    margin-right: 905px;
-    color: yellow;
+    margin-right: 681px;
+    color: white;
     margin-top: 100px;
     font-family:sans-serif;
 }
 
 .prop{
     width:52px;
-    font-size: 40px;
+    font-size: 25px;
     display: inline;
-    background-color:  blueviolet;
+    background-color:  black;
 
 }
 
 .prop h{
     margin-left:700px;
-    margin-right:617px;
-    color: yellow;
+    margin-right:780.5px;
+    color: white;
     font-family:sans-serif;
 }
 
