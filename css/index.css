@@ -68,7 +68,7 @@ a:focus:after {
     background-color: rgba(0, 0, 0, 0.781);
     width: 1920;
     display: flex;
-    background: linear-gradient( rgba(41, 40, 40, 0.664), rgba(19, 19, 19, 0.959)), url("/img/LAK.jpg");
+    background: linear-gradient( rgba(41, 40, 40, 0.664), rgba(19, 19, 19, 0.959)), url("/img/Lakers.jpg");
     margin-top:-10px;
 }
 
@@ -246,8 +246,34 @@ a:focus:after {
       margin-left: 35px;
   }
 
-  .pck{
+  .logo{
       margin-left: 1800px;
   }
 
- 
+  .logo:hover{
+      -webkit-animation: spin 5s infinite;
+       animation: spin 5s infinite;
+    }
+    
+    @-webkit-keyframes spin{
+      from {
+        -webkit-transform: rotateY(0deg);
+      }
+      to {
+        -webkit-transform: rotateY(-360deg);
+      }
+    }
+    
+    @keyframes spin{
+      from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      
+      to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+      }
+    }

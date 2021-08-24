@@ -1,219 +1,246 @@
 *{
-    margin: 0;
-    padding:0;
-    max-width: 1920px;
+  margin: 0;
+  padding:0;
+  max-width: 1920px;
 }
 
 body{
-    background: linear-gradient( rgba(41, 40, 40, 0.596),rgba(41, 40, 40, 0.596)), url("/img2/cont.jpg");
-    
+  background: linear-gradient( rgba(41, 40, 40, 0.596),rgba(41, 40, 40, 0.596)), url("/img2/cont.jpg");
+  
 }
 
 ul {
-    list-style: none; /*убираем маркеры списка*/
-    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
-    padding-left: 0; /*убираем левый отступ, равный 40px*/
-    
-  }
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+  
+}
 
 a {
-    text-decoration: none; /*убираем подчеркивание текста ссылок*/
-    font-size: 30px;
-    font-family:sans-serif;
-    margin-left: 40px;
-    color:white;
-      
- }
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  font-size: 30px;
+  font-family:sans-serif;
+  margin-left: 40px;
+  color:white;
+    
+}
 
 
 .logo{
-    margin-left:960px;
+  margin-left:960px;
 }
 
 a {
-	position: relative;
-	cursor: pointer;
-	line-height: 1; 
-	text-decoration: none; 
+position: relative;
+cursor: pointer;
+line-height: 1; 
+text-decoration: none; 
 
 }
 a:after {
-	display: block;
-	position: absolute;
-	left: 0; 
-	height: 3px; 
-	background-color:yellow; 
-	content: "";
-	transition: width 0.3s ease-out; 
+display: block;
+position: absolute;
+left: 0; 
+height: 3px; 
+background-color:yellow; 
+content: "";
+transition: width 0.3s ease-out; 
 }
 
 a:hover:after,
 a:focus:after {
-	width: 100%; 
+width: 100%; 
 }
 
 
 .main_menu li{
-    margin-top:15px; 
-    display: inline-block;  
+  margin-top:15px; 
+  display: inline-block;  
 }
 
 
 
 .bottom p{
-    font-family:sans-serif;
-    color:whitesmoke;
-    font-size: 15px;
+  font-family:sans-serif;
+  color:whitesmoke;
+  font-size: 15px;
 
 }
 
 .bottom{
-    background-color: rgb(53, 53, 53);
-    height:60px;
+  background-color: rgb(53, 53, 53);
+  height:60px;
 }
 
 /* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color:black;
-    font-family: Arial;
-    position: fixed;
-    width: 1920px;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  overflow: hidden;
+  background-color:black;
+  font-family: Arial;
+  position: fixed;
+  width: 1920px;
+}
 
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:none;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: blueviolet;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    
-  }
-  
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 
-  .dropdown-content a:hover {
-    background-color: blueviolet;
-  }
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
   
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: blueviolet;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  .dropbtn p {
-      margin-left: 35px;
-  }
 
-  .pck{
-      margin-left: 1800px;
-  }
+.dropdown-content a:hover {
+  background-color: blueviolet;
+}
 
-  .main_cnt{
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn p {
+    margin-left: 35px;
+}
+
+.logo{
+    margin-left: 1800px;
+}
+
+.main_cnt{
+  padding-top:50px;
+  font-size: 35px;
+  font-family: sans-serif;
+  background-color: blueviolet;
+  margin-left: 220px;
+  width: 1500px;
+  height:1100px;
+  margin-top: 100px;
+}
+
+
+
+
+.prop2{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding-left: 800px;
     padding-top:50px;
     font-size: 35px;
     font-family: sans-serif;
-    background-color: blueviolet;
-    margin-left: 220px;
-    width: 1500px;
-    height:1100px;
-    margin-top: 100px;
-  }
+}
 
-
+.com1{
+  margin-top:100px;
+  background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
+  color: whitesmoke;
+  font-size: 25px;
+  width:1400px;
+  height:300px;
+  margin-left:50px;
   
+}
 
-  .prop2{
-      background-color: rgb(0, 0, 0);
-      color: whitesmoke;
-      padding-left: 800px;
-      padding-top:50px;
-      font-size: 35px;
-      font-family: sans-serif;
-  }
+.com1 p{
+    padding-top:10px;
+    padding-left:30px;
+}
 
-  .com1{
-    margin-top:100px;
-    background-color: rgb(0, 0, 0);
+.com2{
+  margin-top:100px;
+  background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
+  color: whitesmoke;
+  font-size: 25px;
+  width:1400px;
+  height:300px;
+  margin-left:50px;
+}
+
+.com2 p{
+    padding-top:10px;
+    padding-left:30px;
+}
+
+.form{
+    background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
     color: whitesmoke;
-    font-size: 25px;
-    width:1400px;
-    height:300px;
-    margin-left:50px;
+    margin-left: 50px;
+    width: 1400px;
+    margin-top: 70px;
+}
+
+.logo:hover{
+    -webkit-animation: spin 5s infinite;
+     animation: spin 5s infinite;
+  }
+  
+  @-webkit-keyframes spin{
+    from {
+      -webkit-transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(-360deg);
+    }
+  }
+  
+  @keyframes spin{
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
     
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
   }
-
-  .com1 p{
-      padding-top:10px;
-      padding-left:30px;
-  }
-
-  .com2{
-    margin-top:100px;
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
-    font-size: 25px;
-    width:1400px;
-    height:300px;
-    margin-left:50px;
-  }
-
-  .com2 p{
-      padding-top:10px;
-      padding-left:30px;
-  }
-
-  .form{
-      background-color: black;
-      color: whitesmoke;
-      margin-left: 50px;
-      width: 1400px;
-      margin-top: 70px;
-  }
- 
