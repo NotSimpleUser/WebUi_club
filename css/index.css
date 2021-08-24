@@ -12,6 +12,7 @@ body{
     max-width: 100%;
 }
 
+
 ul {
     list-style: none; /*убираем маркеры списка*/
     margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
@@ -69,6 +70,7 @@ a:focus:after {
     background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
     margin-top: -10px;
     margin-bottom: -10px;
+    max-width: 100%;
 }
 
 .LW{
@@ -78,6 +80,7 @@ a:focus:after {
     display: flex;
     background: linear-gradient( rgba(41, 40, 40, 0.664), rgba(19, 19, 19, 0.959)), url("/img/Lakers.jpg");
     margin-top:-10px;
+    max-width: 100%;
 }
 
 
@@ -89,9 +92,12 @@ a:focus:after {
     font-size: 25px;
     margin-left:100px;
     margin-bottom: 35px;
-    
+    max-width: 100%;
+    height: auto;
 
 }
+
+
 
 .txt1{
     width:900px;
@@ -99,6 +105,7 @@ a:focus:after {
     color:white;
     font-size: 25px;
     margin-left:100px;
+    max-width: 100%;
     
 
 }
@@ -106,69 +113,85 @@ a:focus:after {
 .main-page{
     height: 970px;
     background-image: url("img/mainpkc.jpg") width="1980" height="980" alt="LAL";
+    max-width: 100%;
 }
 
 .team{
     display: flex;
     margin-top: 70px;
     margin-left: 150px;
+    max-width: 100%;
 }
 
 .win{
     display: flex;
     margin-top: 70px;
     margin-left: 150px;
+    max-width: 100%;
 }
 
 .lorem{
     font-size: 40px;
     margin-bottom:10px;
     color: rgb(240, 240, 96);
+    max-width: 100%;
 }
 
 .lorem1{
     font-size: 40px;
     margin-bottom:10px;
     color: rgb(240, 240, 96);
+    max-width: 100%;
 }
 
 .prop1{
-    width:50px;
-    font-size: 40px;
-    display: inline;
-    background-color:  blueviolet;
-    padding-left: 940px;
-    padding-right: 816px;
-
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  background-color: #000;
+  font-size: 35px;
+  font-family: sans-serif;
+  height: 100px;
+  max-width: 100%;
 }
 
 .prop1 h{
-    color: yellow;
+    color: whitesmoke;
     margin-top: 100px;
     font-family:sans-serif;
+    max-width: 100%;
 }
 
 .prop{
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
-  padding-left: 800px;
-  padding-top:50px;
+  background-color: #000;
   font-size: 35px;
   font-family: sans-serif;
-  max-width:100%;
   height: 100px;
+  max-width: 100%;
+}
+
+.prop h{
+  color: whitesmoke;
+  margin-top: 100px;
+  font-family:sans-serif;
+  max-width: 100%;
+  padding-left:auto;
+  margin-top: 0px;
 }
 
 .bottom p{
     font-family:sans-serif;
     color:whitesmoke;
     font-size: 15px;
+    max-width: 100%;
 
 }
 
 .bottom{
     background-color: rgb(53, 53, 53);
     height:60px;
+    max-width: 100%;
 }
 
 /* Navbar container */
@@ -281,3 +304,130 @@ a:focus:after {
         transform: rotateY(-360deg);
       }
     }
+    #hamnav {
+      width: 100%;
+      background: #000;
+      /* Optional */
+      position: fixed;
+      top: 0;
+    }
+    
+    /* (B) HORIZONTAL MENU ITEMS */
+    #hamitems { display: flex; }
+    #hamitems a {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+    #hamitems a:hover { background: #401408; }
+    
+    /* (C) HIDE HAMBURGER */
+    #hamnav label, #hamburger { display: none; }
+    
+    /* [ON SMALL SCREENS] */
+    @media screen and (max-width: 768px){
+      /* (A) BREAK INTO VERTICAL MENU */
+      #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+      }
+    
+      /* (B) SHOW HAMBURGER ICON */
+      #hamnav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+    
+      /* (C) TOGGLE SHOW/HIDE MENU */
+      #hamitems { display: none; }
+      #hamnav input:checked ~ #hamitems { display: block; }
+    }
+    
+    /* [DOES NOT MATTER] */
+    html, body {
+      padding: 0;
+      margin: 0;
+      font-family: arial, sans-serif;
+    }
+
+    @media screen and (max-width:1600px) {
+      .bio{
+        height: 700px;
+        background-color: rgba(0, 0, 0, 0.781);
+        width: 1920;
+        display: flex;
+        background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
+        margin-top: -10px;
+        margin-bottom: -10px;
+        max-width: 100%;
+
+    }
+    .prop{
+      background-color: rgb(0, 0, 0);
+      color: whitesmoke;
+      background-color: #000;
+      font-size: 35px;
+      font-family: sans-serif;
+      height: 150px;
+      max-width: 100%;
+
+      
+    }
+    #hamnav {
+      width: 90%;
+      background: #000;
+      /* Optional */
+      position: fixed;
+      top: 0;
+    }
+    body{
+      max-width: 90%;
+  }
+    }
+
+
+    @media screen and (max-width:1100px) {
+      .bio{
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.781);
+        width: 1920;
+        display: flex;
+        background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
+        margin-top: -10px;
+        margin-bottom: -10px;
+        max-width: 100%;
+
+    }
+    .prop{
+      background-color: rgb(0, 0, 0);
+      color: whitesmoke;
+      background-color: #000;
+      font-size: 35px;
+      font-family: sans-serif;
+      height: 150px;
+      max-width: 100%;
+    }
+    }
+
+    @media screen and (max-width:320px) {
+      .bio{
+        height: 1900px;
+        background-color: rgba(0, 0, 0, 0.781);
+        width: 1920;
+        display: flex;
+        background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
+        margin-top: -10px;
+        margin-bottom: -10px;
+        max-width: 100%;
+
+    }
+  }
