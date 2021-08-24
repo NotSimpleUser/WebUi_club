@@ -1,9 +1,11 @@
 *{
   margin: 0;
   padding:0;
-  max-width: 1920px;
+  max-width: 100%;
 }
-
+img{
+  max-width: 100%;
+}
 body{
   background: linear-gradient( rgba(41, 40, 40, 0.596),rgba(41, 40, 40, 0.596)), url("/img2/cont.jpg");
   
@@ -180,7 +182,7 @@ width: 100%;
 
 .com1{
   margin-top:100px;
-  background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
+  background: linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
   color: whitesmoke;
   font-size: 25px;
   width:1400px;
@@ -196,7 +198,7 @@ width: 100%;
 
 .com2{
   margin-top:100px;
-  background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
+  background:  linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
   color: whitesmoke;
   font-size: 25px;
   width:1400px;
@@ -210,7 +212,7 @@ width: 100%;
 }
 
 .form{
-    background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959));
+    background:  linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
     color: whitesmoke;
     margin-left: 50px;
     width: 1400px;
