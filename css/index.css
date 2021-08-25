@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header {
   width: 100%;
@@ -16,88 +16,75 @@ h2 {
 }
 
 ul {
-    list-style: none; /*убираем маркеры списка*/
-    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
-    padding-left: 0; /*убираем левый отступ, равный 40px*/
-    
-  }
-
-a {
-    text-decoration: none; /*убираем подчеркивание текста ссылок*/
-    font-size: 30px;
-    font-family:sans-serif;
-    margin-left: 40px;
-    color:white;
-      
- }
-
-
-.logo{
-    margin-left:960px;
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
 }
 
 a {
-	position: relative;
-	cursor: pointer;
-	line-height: 1; 
-	text-decoration: none; 
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-left: 40px;
+  color: white;
+}
 
+.logo {
+  margin-left: 960px;
+}
+
+a {
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
 }
 a:after {
-	display: block;
-	position: absolute;
-	left: 0; 
-	height: 3px; 
-	background-color:yellow; 
-	content: "";
-	transition: width 0.3s ease-out; 
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background-color: yellow;
+  content: "";
+  transition: width 0.3s ease-out;
 }
 
 a:hover:after,
 a:focus:after {
-	width: 100%; 
+  width: 100%;
 }
 
-
-.main_menu li{
-    margin-top:15px; 
-    display: inline-block;  
+.main_menu li {
+  margin-top: 15px;
+  display: inline-block;
 }
 
-.bio{
-    background-color: rgba(0, 0, 0, 0.781);
-    display: flex;
-    flex-direction: row;
-   
-
+.bio {
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+  flex-direction: row;
 }
 
-.LW{
-    background-color: rgba(0, 0, 0, 0.781);
-    display: flex;
-
+.LW {
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
 }
 
-
-
-.txt{
-    font-family:sans-serif;
-    color:white;
-    font-size: 25px;
-    padding: 20px;
-
+.txt {
+  font-family: sans-serif;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
 }
 
-.team, .win{
-    display: flex;
+.team,
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.team img, .win img{
-  max-width: 50%;
-
-}
-
-.prop{
+.prop {
   color: whitesmoke;
   background-color: #000;
   font-size: 35px;
@@ -106,185 +93,189 @@ a:focus:after {
   flex-direction: column;
 }
 
-.prop h{
+.prop h {
   color: whitesmoke;
-  font-family:sans-serif;
-  padding-left:auto;
+  font-family: sans-serif;
+  padding-left: auto;
 }
 
-.bottom p{
-    font-family:sans-serif;
-    color:whitesmoke;
-    font-size: 15px;
-
+.bottom p {
+  font-family: sans-serif;
+  color: whitesmoke;
+  font-size: 15px;
 }
 
-.bottom{
-    background-color: rgb(53, 53, 53);
+.bottom {
+  background-color: rgb(53, 53, 53);
 }
 
 /* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color:black;
-    font-family: Arial;
-    position: fixed;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+  position: fixed;
+}
 
+/* Links inside the navbar */
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: blueviolet;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: blueviolet;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn p {
+  margin-left: 35px;
+}
+
+.logo:hover {
+  -webkit-animation: spin 5s infinite;
+  animation: spin 5s infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
   }
-  
-  /* The dropdown container */
-  .dropdown {
-    overflow: hidden;
+  to {
+    -webkit-transform: rotateY(-360deg);
   }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #401408;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
     color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
   }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:none;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
     display: none;
-    position: fixed;
-    background-color: blueviolet;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
   }
-  
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    
-  }
-  
-
-  .dropdown-content a:hover {
-    background-color: blueviolet;
-  }
-  
-  
-  .dropdown:hover .dropdown-content {
+  #hamnav input:checked ~ #hamitems {
     display: block;
   }
+}
 
-  .dropbtn p {
-      margin-left: 35px;
+@media screen and (max-width: 1600px) {
+  .bio {
+    background-color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    background: linear-gradient(
+        rgba(43, 42, 42, 0.685),
+        rgba(19, 19, 19, 0.959)
+      ),
+      url("/img/zal.jpg");
   }
-
-
-  .logo:hover{
-      -webkit-animation: spin 5s infinite;
-       animation: spin 5s infinite;
-    }
-    
-    @-webkit-keyframes spin{
-      from {
-        -webkit-transform: rotateY(0deg);
-      }
-      to {
-        -webkit-transform: rotateY(-360deg);
-      }
-    }
-    
-    @keyframes spin{
-      from {
-        -moz-transform: rotateY(0deg);
-        -ms-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-      }
-      
-      to {
-        -moz-transform: rotateY(-360deg);
-        -ms-transform: rotateY(-360deg);
-        transform: rotateY(-360deg);
-      }
-    }
-    
-    /* (B) HORIZONTAL MENU ITEMS */
-    #hamitems { display: flex; }
-    #hamitems a {
-      flex-grow: 1;
-      flex-basis: 0;
-      padding: 10px;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-    }
-    #hamitems a:hover { background: #401408; }
-    
-    /* (C) HIDE HAMBURGER */
-    #hamnav label, #hamburger { display: none; }
-    
-    /* [ON SMALL SCREENS] */
-    @media screen and (max-width: 768px){
-      /* (A) BREAK INTO VERTICAL MENU */
-      #hamitems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-      }
-    
-      /* (B) SHOW HAMBURGER ICON */
-      #hamnav label {
-        display: inline-block;
-        color: white;
-        background: #a02620;
-        font-style: normal;
-        font-size: 1.2em;
-        padding: 10px;
-      }
-    
-      /* (C) TOGGLE SHOW/HIDE MENU */
-      #hamitems { display: none; }
-      #hamnav input:checked ~ #hamitems { display: block; }
-    }
-    
-
-    @media screen and (max-width:1600px) {
-      .bio{
-        background-color: rgba(0, 0, 0, 0.781);
-        display: flex;
-        background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
-
-      }
-      .prop{
-        color: whitesmoke;
-        background-color: #000;
-        font-size: 35px;
-        font-family: sans-serif;
-      
-      }
-
-    }
+  .prop {
+    color: whitesmoke;
+    background-color: #000;
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+}
 
 .container {
   max-width: 1200px;
