@@ -92,6 +92,10 @@ a:focus:after {
     display: flex;
 }
 
+.team img, .win img{
+  max-width: 50%;
+
+}
 
 .prop{
   color: whitesmoke;
@@ -285,4 +289,8 @@ a:focus:after {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-page img {
+  max-width: 100%;
 }
