@@ -1,102 +1,138 @@
-*{
+* {
   margin: 0;
-  padding:0;
-  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
-img{
-  max-width: 100%;
+header {
+  width: 100%;
+  background: #000;
+  /* Optional */
+  position: fixed;
+  top: 0;
 }
+
 body{
-  background: linear-gradient( rgba(41, 40, 40, 0.596),rgba(41, 40, 40, 0.596)), url("/img2/cont.jpg");
-  
+  background-color:yellow;
+}
+
+h2 {
+  text-align: center;
 }
 
 ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
   padding-left: 0; /*убираем левый отступ, равный 40px*/
-  
 }
 
 a {
   text-decoration: none; /*убираем подчеркивание текста ссылок*/
   font-size: 30px;
-  font-family:sans-serif;
+  font-family: sans-serif;
   margin-left: 40px;
-  color:white;
-    
+  color: white;
 }
 
-
-.logo{
-  margin-left:960px;
+.logo {
+  margin-left: 960px;
 }
 
 a {
-position: relative;
-cursor: pointer;
-line-height: 1; 
-text-decoration: none; 
-
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
 }
 a:after {
-display: block;
-position: absolute;
-left: 0; 
-height: 3px; 
-background-color:yellow; 
-content: "";
-transition: width 0.3s ease-out; 
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background-color: yellow;
+  content: "";
+  transition: width 0.3s ease-out;
 }
 
 a:hover:after,
 a:focus:after {
-width: 100%; 
+  width: 100%;
 }
 
-
-.main_menu li{
-  margin-top:15px; 
-  display: inline-block;  
+.main_menu li {
+  margin-top: 15px;
+  display: inline-block;
 }
 
+.bio {
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+  flex-direction: row;
+}
 
+.LW {
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+}
 
-.bottom p{
-  font-family:sans-serif;
-  color:whitesmoke;
+.txt {
+  font-family: sans-serif;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.team,
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prop {
+  color: whitesmoke;
+  background-color: #000;
+  font-size: 35px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.prop h {
+  color: whitesmoke;
+  font-family: sans-serif;
+  padding-left: auto;
+}
+
+.bottom p {
+  font-family: sans-serif;
+  color: whitesmoke;
   font-size: 15px;
-
 }
 
-.bottom{
+.bottom {
   background-color: rgb(53, 53, 53);
-  height:60px;
 }
 
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color:black;
+  background-color: black;
   font-family: Arial;
   position: fixed;
-  width: 1920px;
 }
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
 }
 
 /* The dropdown container */
 .dropdown {
-  float: left;
   overflow: hidden;
 }
 
@@ -110,12 +146,12 @@ width: 100%;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
-  
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:none;
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: none;
 }
 
 /* Dropdown content (hidden by default) */
@@ -124,10 +160,9 @@ width: 100%;
   position: fixed;
   background-color: blueviolet;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 
 .dropdown-content a {
   float: none;
@@ -136,113 +171,191 @@ width: 100%;
   text-decoration: none;
   display: block;
   text-align: left;
-  
 }
-
 
 .dropdown-content a:hover {
   background-color: blueviolet;
 }
-
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropbtn p {
-    margin-left: 35px;
+  margin-left: 35px;
 }
 
-.logo{
-    margin-left: 1800px;
+#cf:hover {
+  -webkit-animation: spin 5s infinite;
+  animation: spin 5s infinite;
 }
 
-.main_cnt{
-  padding-top:50px;
-  font-size: 35px;
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #401408;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .prop .team {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prop .win {
+    flex-direction: row;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-page img {
+  max-width: 100%;
+}
+
+form {
+  /* Расположим форму по центру страницы */
+  margin: 0 auto;
+  width: 400px;
+  /* Определим контур формы */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Определим размер и выравнивание */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+
+input,
+textarea {
+  /* Убедимся, что все поля имеют одинаковые настройки шрифта
+     По умолчанию в textarea используется моноширинный шрифт */
+  font: 7em sans-serif;
+
+  /* Определим размер полей */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Стилизуем границы полей */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Дополнительная подсветка для элементов в фокусе */
+  border-color: #000;
+}
+
+textarea {
+  /* Выравним многострочные текстовые поля с их текстами-подсказками */
+  vertical-align: top;
+
+  /* Предоставим пространство для ввода текста */
+  height: 5em;
+}
+
+.button {
+  /* Выравним кнопки с их текстами-подсказками */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* Этот дополнительный внешний отступ примерно равен расстоянию
+     между текстами-подсказками и текстовыми полями */
+  margin-left: .5em;
+}
+
+.foot{
   font-family: sans-serif;
-  background-color: blueviolet;
-  margin-left: 220px;
-  width: 1500px;
-  height:1100px;
-  margin-top: 100px;
+  font-size: 35px;
+  background-color: rgb(92, 92, 92);
+  color: beige;
 }
-
-
-
-
-.prop2{
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
-    padding-left: 800px;
-    padding-top:50px;
-    font-size: 35px;
-    font-family: sans-serif;
-}
-
-.com1{
-  margin-top:100px;
-  background: linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
-  color: whitesmoke;
-  font-size: 25px;
-  width:1400px;
-  height:300px;
-  margin-left:50px;
-  
-}
-
-.com1 p{
-    padding-top:10px;
-    padding-left:30px;
-}
-
-.com2{
-  margin-top:100px;
-  background:  linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
-  color: whitesmoke;
-  font-size: 25px;
-  width:1400px;
-  height:300px;
-  margin-left:50px;
-}
-
-.com2 p{
-    padding-top:10px;
-    padding-left:30px;
-}
-
-.form{
-    background:  linear-gradient( rgba(17, 16, 16, 0.877), rgba(61, 60, 60, 0.959));
-    color: whitesmoke;
-    margin-left: 50px;
-    width: 1400px;
-    margin-top: 70px;
-}
-
-.logo:hover{
-    -webkit-animation: spin 5s infinite;
-     animation: spin 5s infinite;
-  }
-  
-  @-webkit-keyframes spin{
-    from {
-      -webkit-transform: rotateY(0deg);
-    }
-    to {
-      -webkit-transform: rotateY(-360deg);
-    }
-  }
-  
-  @keyframes spin{
-    from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    
-    to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
-    }
-  }

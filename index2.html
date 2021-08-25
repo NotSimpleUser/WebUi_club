@@ -1,87 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Los Angeles Lakers</title>
 </head>
+
 <body>
     <header>
-        <div class="menu">
-            <div class="navbar">
-                <a href="index.html">Main</a> 
-                <div class="dropdown">
-                     <button class="dropbtn"><p>Matches</p>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                 <div class="dropdown-content">
-                    <a href="#">Match 1</a>
-                    <a href="#">Match 2</a>
-                    <a href="#">Match 3</a>
-                  </div>
+        <div class="container">
+            <!-- (A) MENU WRAPPER -->
+            <nav id="hamnav">
+                <!-- (B) THE HAMBURGER -->
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+
+                <!-- (C) MENU ITEMS -->
+                <div id="hamitems">
+                    <a href="index.html">Main</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a>Matches</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Match 1</a>
+                            <a href="#">Match 2</a>
+                            <a href="#">Match 3</a>
+                        </div>
+                    </div>
+                    <a href="">News</a>
+                    <a href="index2.html">Fans</a>
+                    <a href="">Contacts</a>
+                    <a href="">Admin</a>
+                    <div id="cf"><img src="img/logo.jpg" width="60px" height="40px"></a></div>
                 </div>
-                <a href="#news">News</a>
-                <a href="index2.html">Fans</a>
-                <a href="#news">Contacts</a>
-                <a href="#news">Admin</a>
-                <p class="logo"><img src="https://cdn11.bigcommerce.com/s-tpn0wqr1g7/images/stencil/1280x1280/products/5722/8039/a6b82790-495d-59ab-89d1-8033dde568aa__46601.1540066494.jpg?c=2" width="60" height="50" alt="LAL" ></p>
-            </div>
+        </div>
         </div>
     </header>
     <content>
-        <div class="prop2">
-             <h>Appeal of fans</h>
-        </div>
-        <div class="main_cnt">
-            <div class="coms">
-                <div class="com1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>10.10.2021</p>
-                    <p>NBAFan</p>
-                </div>
-                <div class="com2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>10.09.2021</p>
-                    <p>NBAFan_13</p>
+        <div class="container">
+            <div class="main-page">
+                <img src="https://wallpapercave.com/wp/wp3240433.jpg"
+                    alt="Image of Los angeles lakes">
+            </div>
+            <div class="prop">
+                <h2>Tony B. Jeferson</h2>
+                <div class="bio">
+                    <div class="team">
+                        <div class="team-img">
+                            <img src="img2/unknown-user.png" alt="Photo of user without portrait">
+                        </div>
+                        <div class="txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="form">
-            <form>
-                <ul>
-                  <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
-                  </li>
-                  <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_mail">
-                  </li>
-                  <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                  </li>
-                </ul>
-              </form>
-              <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
+            <div class="prop">
+                <h2>Jack N. Nicklson</h2>
+                <div class="win">
+                    <div class="win-img">
+                        <img src="img2/unknown-user.png" alt="Photo of user without portrait">
+                    </div>
+                    <div class="txt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
             </div>
+            <div class="prop">
+              <form>
+                  <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                      <label for="mail">E-mail:</label>
+                      <input type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                  </ul>
+                </form>
+                <li class="button">
+                  <button type="submit">Send your message</button>
+                </li>
+              </div>
+          </div>
         </div>
     </content>
     <footer>
-        <div class="bottom">
+      <div class="container">
+        <div class="foot">
             <p>Copyright by Pelenychka</p>
         </div>
+    </div>
     </footer>
 </body>
+
 </html>

@@ -142,7 +142,7 @@ a:focus:after {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 10px 10px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -185,7 +185,7 @@ a:focus:after {
   margin-left: 35px;
 }
 
-.logo:hover {
+#cf:hover {
   -webkit-animation: spin 5s infinite;
   animation: spin 5s infinite;
 }
@@ -217,16 +217,13 @@ a:focus:after {
 #hamitems {
   display: flex;
 }
-#hamitems a {
+#hamitems a, i {
   flex-grow: 1;
   flex-basis: 0;
-  padding: 10px;
+  padding: none;
   color: white;
   text-decoration: none;
   text-align: center;
-}
-#hamitems a:hover {
-  background: #401408;
 }
 
 /* (C) HIDE HAMBURGER */
@@ -284,4 +281,11 @@ a:focus:after {
 
 .main-page img {
   max-width: 100%;
+}
+
+.foot{
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: rgb(92, 92, 92);
+  color: beige;
 }
