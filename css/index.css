@@ -11,6 +11,10 @@ header {
   top: 0;
 }
 
+body{
+  background-color: rgb(85, 41, 128);
+}
+
 h2 {
   text-align: center;
 }
@@ -82,6 +86,7 @@ a:focus:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .prop {
@@ -259,21 +264,16 @@ a:focus:after {
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .bio {
-    background-color: rgba(0, 0, 0, 0.781);
-    display: flex;
-    background: linear-gradient(
-        rgba(43, 42, 42, 0.685),
-        rgba(19, 19, 19, 0.959)
-      ),
-      url("/img/zal.jpg");
+
+@media screen and (min-width: 1200px) {
+  .prop .team {
+    flex-direction: row;
   }
-  .prop {
-    color: whitesmoke;
-    background-color: #000;
-    font-size: 35px;
-    font-family: sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+  .prop .win {
+    flex-direction: row;
   }
 }
 
