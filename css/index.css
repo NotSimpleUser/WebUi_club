@@ -11,6 +11,9 @@ header {
   top: 0;
 }
 
+h2 {
+  text-align: center;
+}
 
 ul {
     list-style: none; /*убираем маркеры списка*/
@@ -64,14 +67,15 @@ a:focus:after {
 .bio{
     background-color: rgba(0, 0, 0, 0.781);
     display: flex;
-    background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
+    flex-direction: row;
+   
 
 }
 
 .LW{
     background-color: rgba(0, 0, 0, 0.781);
     display: flex;
-    background: linear-gradient( rgba(41, 40, 40, 0.664), rgba(19, 19, 19, 0.959)), url("/img/Lakers.jpg");
+
 }
 
 
@@ -80,19 +84,8 @@ a:focus:after {
     font-family:sans-serif;
     color:white;
     font-size: 25px;
+    padding: 20px;
 
-}
-
-.txt1{
-    font-family:sans-serif;
-    color:white;
-    font-size: 25px;
-
-  
-}
-
-.main-page{
-    background-image: url("img/mainpkc.jpg") width="1980" height="980" alt="LAL";
 }
 
 .team, .win{
@@ -101,11 +94,12 @@ a:focus:after {
 
 
 .prop{
-  background-color: rgb(0, 0, 0);
   color: whitesmoke;
   background-color: #000;
   font-size: 35px;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .prop h{
@@ -270,34 +264,19 @@ a:focus:after {
       #hamnav input:checked ~ #hamitems { display: block; }
     }
     
-    /* [DOES NOT MATTER] */
-    html, body {
-      padding: 0;
-      margin: 0;
-      font-family: arial, sans-serif;
-    }
 
     @media screen and (max-width:1600px) {
       .bio{
-        height: 700px;
         background-color: rgba(0, 0, 0, 0.781);
-        width: 1920;
         display: flex;
         background: linear-gradient( rgba(43, 42, 42, 0.685), rgba(19, 19, 19, 0.959)), url("/img/zal.jpg");
-        margin-top: -10px;
-        margin-bottom: -10px;
-        max-width: 100%;
 
       }
       .prop{
-        background-color: rgb(0, 0, 0);
         color: whitesmoke;
         background-color: #000;
         font-size: 35px;
         font-family: sans-serif;
-        height: 150px;
-        max-width: 100%;
-
       
       }
 
