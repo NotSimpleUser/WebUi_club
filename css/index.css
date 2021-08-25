@@ -3,7 +3,13 @@
     padding:0;
     box-sizing: border-box;
 }
-
+header {
+  width: 100%;
+  background: #000;
+  /* Optional */
+  position: fixed;
+  top: 0;
+}
 
 
 ul {
@@ -95,61 +101,18 @@ a:focus:after {
     font-family:sans-serif;
     color:white;
     font-size: 25px;
-    margin-left:100px;
-    max-width: 100%;
+
   
 }
 
 .main-page{
-    height: 970px;
     background-image: url("img/mainpkc.jpg") width="1980" height="980" alt="LAL";
-    max-width: 100%;
 }
 
-.team{
+.team, .win{
     display: flex;
-    margin-top: 70px;
-    margin-left: 150px;
-    max-width: 100%;
 }
 
-.win{
-    display: flex;
-    margin-top: 70px;
-    margin-left: 150px;
-    max-width: 100%;
-}
-
-.lorem{
-    font-size: 40px;
-    margin-bottom:10px;
-    color: rgb(240, 240, 96);
-    max-width: 100%;
-}
-
-.lorem1{
-    font-size: 40px;
-    margin-bottom:10px;
-    color: rgb(240, 240, 96);
-    max-width: 100%;
-}
-
-.prop1{
-  background-color: rgb(0, 0, 0);
-  color: whitesmoke;
-  background-color: #000;
-  font-size: 35px;
-  font-family: sans-serif;
-  height: 100px;
-  max-width: 100%;
-}
-
-.prop1 h{
-    color: whitesmoke;
-    margin-top: 100px;
-    font-family:sans-serif;
-    max-width: 100%;
-}
 
 .prop{
   background-color: rgb(0, 0, 0);
@@ -157,31 +120,23 @@ a:focus:after {
   background-color: #000;
   font-size: 35px;
   font-family: sans-serif;
-  height: 100px;
-  max-width: 100%;
 }
 
 .prop h{
   color: whitesmoke;
-  margin-top: 100px;
   font-family:sans-serif;
-  max-width: 100%;
   padding-left:auto;
-  margin-top: 0px;
 }
 
 .bottom p{
     font-family:sans-serif;
     color:whitesmoke;
     font-size: 15px;
-    max-width: 100%;
 
 }
 
 .bottom{
     background-color: rgb(53, 53, 53);
-    height:60px;
-    max-width: 100%;
 }
 
 /* Navbar container */
@@ -190,12 +145,10 @@ a:focus:after {
     background-color:black;
     font-family: Arial;
     position: fixed;
-    width: 1920px;
   }
   
   /* Links inside the navbar */
   .navbar a {
-    float: left;
     font-size: 16px;
     color: white;
     text-align: center;
@@ -206,7 +159,6 @@ a:focus:after {
   
   /* The dropdown container */
   .dropdown {
-    float: left;
     overflow: hidden;
   }
   
@@ -263,9 +215,6 @@ a:focus:after {
       margin-left: 35px;
   }
 
-  .logo{
-      margin-left: 1800px;
-  }
 
   .logo:hover{
       -webkit-animation: spin 5s infinite;
@@ -293,13 +242,6 @@ a:focus:after {
         -ms-transform: rotateY(-360deg);
         transform: rotateY(-360deg);
       }
-    }
-    #hamnav {
-      width: 100%;
-      background: #000;
-      /* Optional */
-      position: fixed;
-      top: 0;
     }
     
     /* (B) HORIZONTAL MENU ITEMS */
@@ -372,13 +314,7 @@ a:focus:after {
 
       
       }
-    #hamnav {
-      width: 90%;
-      background: #000;
-      /* Optional */
-      position: fixed;
-      top: 0;
-    }
+
     }
 
 .container {
