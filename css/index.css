@@ -1,16 +1,9 @@
 *{
     margin: 0;
     padding:0;
-    max-width: 100%;
+    box-sizing: border-box;
 }
 
-img{
-  max-width: 100%;
-}
-
-body{
-    max-width: 100%;
-}
 
 
 ul {
@@ -97,8 +90,6 @@ a:focus:after {
 
 }
 
-
-
 .txt1{
     width:900px;
     font-family:sans-serif;
@@ -106,8 +97,7 @@ a:focus:after {
     font-size: 25px;
     margin-left:100px;
     max-width: 100%;
-    
-
+  
 }
 
 .main-page{
@@ -370,18 +360,18 @@ a:focus:after {
         margin-bottom: -10px;
         max-width: 100%;
 
-    }
-    .prop{
-      background-color: rgb(0, 0, 0);
-      color: whitesmoke;
-      background-color: #000;
-      font-size: 35px;
-      font-family: sans-serif;
-      height: 150px;
-      max-width: 100%;
+      }
+      .prop{
+        background-color: rgb(0, 0, 0);
+        color: whitesmoke;
+        background-color: #000;
+        font-size: 35px;
+        font-family: sans-serif;
+        height: 150px;
+        max-width: 100%;
 
       
-    }
+      }
     #hamnav {
       width: 90%;
       background: #000;
@@ -389,8 +379,9 @@ a:focus:after {
       position: fixed;
       top: 0;
     }
-    body{
-      max-width: 90%;
-  }
     }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
