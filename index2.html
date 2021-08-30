@@ -47,71 +47,106 @@
                 <img src="https://wallpapercave.com/wp/wp3240433.jpg"
                     alt="Image of Los angeles lakes">
             </div>
-            <div class="prop">
-                <h2>Tony B. Jeferson</h2>
-                <div class="bio">
-                    <div class="team">
-                        <div class="team-img">
-                            <img src="img2/unknown-user.png" alt="Photo of user without portrait">
-                        </div>
-                        <div class="txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                                culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+            <div class="appeals">
+                    <div class="prop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.</p>
+                        <footer class="flex-row">
+                            <p><time datetime="10/04/2021 20:33">10/04/2021 20:33</time></p>
+                            <p><a class="appeal-author"><b>NBAFan2000</b></a></p>
+                        </footer>
+                    </div>
+                    <div class="prop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Inventore tenetur placeat est culpa
+                            labore consectetur consequuntur voluptatum iure laudantium nam quisquam sit, delectus,
+                            beatae
+                            veniam? Delectus porro corporis aperiam vitae.
+                        </p>
+                        <footer class="flex-row">
+                            <p><time datetime="11/02/2021 19:35">11/02/2021 19:35</time></p>
+                            <p><a class="appeal-author"><b>NBAFan2000</b></a></p>
+                        </footer>
                     </div>
                 </div>
-            </div>
-            <div class="prop">
-                <h2>Jack N. Nicklson</h2>
-                <div class="win">
-                    <div class="win-img">
-                        <img src="img2/unknown-user.png" alt="Photo of user without portrait">
-                    </div>
-                    <div class="txt">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                         culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                <div class="appeal-form flex-row">
+                    <form action="#" class="flex-row">
+                        <textarea name="fan-appeal" id="fan-appeal" cols="80" rows="10"></textarea>
+                        <button class="appeal-button"> Send </button>
+                    </form>
                 </div>
             </div>
-            <div class="prop">
-              <form>
-                  <ul>
-                    <li>
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="user_name">
-                    </li>
-                    <li>
-                      <label for="mail">E-mail:</label>
-                      <input type="email" id="mail" name="user_mail">
-                    </li>
-                    <li>
-                      <label for="msg">Message:</label>
-                      <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                  </ul>
-                </form>
-                <li class="button">
-                  <button type="submit">Send your message</button>
-                </li>
-              </div>
-          </div>
-        </div>
     </content>
     <footer>
       <div class="container">
-        <div class="foot">
-            <p>Copyright by Pelenychka</p>
+            <div class="foot">
+                <p>Copyright by Pelenychka</p>
+            </div>
         </div>
-    </div>
     </footer>
+    <script>
+
+const button = document.querySelector(".appeal-button");
+
+const container = document.getElementsByClassName("appeals");
+
+// define function that
+const addApeal = function (text) {
+  let article = document.createElement("article");
+  article.setAttribute("class", "prop");
+  let pText = document.createElement("p");
+  pText.textContent = text;
+  article.appendChild(pText);
+  const footer = document.createElement("footer");
+  footer.setAttribute("class", "flex-row");
+  article.appendChild(footer);
+  let pTime = document.createElement("p");
+  let pAuthor = document.createElement("p");
+  footer.appendChild(pTime);
+  footer.appendChild(pAuthor);
+  let timeText = document.createElement("time");
+  pTime.appendChild(timeText);
+  let authorName = document.createElement("a");
+  pAuthor.appendChild(authorName);
+  authorName.setAttribute("class", "appeal-author");
+  authorName.textContent = "NBAFan2000";
+  let time = new Date();
+  timeText.textContent = time.toLocaleString();
+  container[0].appendChild(article);
+};
+
+function addAppealFunc() {
+  const textArea = document.getElementById("fan-appeal");
+  let textAreaAppeal = textArea.value;
+  addApeal(textAreaAppeal);
+  textArea.value = "";
+}
+
+button.addEventListener("click", addAppealFunc);
+
+
+    </script>
 </body>
 
 </html>

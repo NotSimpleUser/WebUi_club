@@ -11,6 +11,10 @@ header {
   top: 0;
 }
 
+p{
+  font-size: 20px;
+}
+
 body{
   background-color:yellow;
 }
@@ -89,20 +93,12 @@ a:focus:after {
   flex-direction: column;
 }
 
-.prop {
-  color: whitesmoke;
-  background-color: #000;
-  font-size: 35px;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
+
+
+article{
+  font-size: 20px;
 }
 
-.prop h {
-  color: whitesmoke;
-  font-family: sans-serif;
-  padding-left: auto;
-}
 
 .bottom p {
   font-family: sans-serif;
@@ -359,3 +355,4 @@ button {
   background-color: rgb(92, 92, 92);
   color: beige;
 }
+
